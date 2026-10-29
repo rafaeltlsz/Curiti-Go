@@ -1,1 +1,1 @@
-# Curitigo
+# Curiti-Go
