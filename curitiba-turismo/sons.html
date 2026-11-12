@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/sons.css">
+
+    <link rel="icon" type="image/png" href="./img/logo-guia.jpg.png">
+    <title>Sons - Curiti-Go</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="./index.html">
+                <img src="./img/logo-curitigo.jpg.png" alt="Logo do Curiti-Go">
+            </a>
+            <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu">☰</button>
+            <nav>
+                <ul id="menu-principal">
+                    <li><a href="./roteiro.html">Roteiro</a></li>
+                    <li><a href="./gastronomia.html">Gastronomia</a></li>
+                    <li><a href="./favoritos.html">Favoritos</a></li>
+                    <li><a href="./sons.html" class="ativo">Sons</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="page-header">
+            <h1>Sons de Curitiba</h1>
+            <p class="subtitulo">Nesta página, você pode ouvir diferentes sons da cidade. Use o player de cada faixa.
+            </p>
+        </div>
+
+        <section class="faixa">
+            <h2>Hino de Curitiba</h2>
+            <div class="hino-container">
+                <div class="hino-controler">
+                    <audio id="audio-hino" controls>
+                        <source src="./audio/hino.mp3" type="audio/mpeg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                    <div class="action-row">
+                        <button id="btn-tocar" class="btn-tocar">Tocar Hino de Curitiba</button>
+                        <p id="status">Clique no botão para ouvir o Hino de Curitiba.</p>
+                    </div>
+                </div>
+                <img src="./img/hino-curitiba.png" alt="Imagem representando o Hino de Curitiba" class="hino-imagem">
+            </div>
+        </section>
+
+        <section class="faixa">
+            <h2>Som da cidade</h2>
+            <div class="hino-container">
+                <div class="hino-controler">
+                    <audio id="audio-cidade" controls>
+                        <source src="./audio/brastemp.mp3" type="audio/mpeg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                    <div class="action-row">
+                        <button id="btn-tocar-cidade" class="btn-tocar">Tocar Som da cidade</button>
+                        <p id="status-cidade">Clique no botão para ouvir o Som da cidade.</p>
+                    </div>
+                </div>
+                <img src="./img/curitiba.jpg" alt="Imagem representando o som da cidade" class="hino-imagem">
+            </div>
+        </section>
+
+        <div class="descricao-card">
+            <p class="descricao">
+                Curitiba possui uma paisagem sonora particular, marcada pelo contraste entre o burburinho constante dos
+                ônibus biarticulados e o silêncio denso das araucárias no Parque Tanguá. O vento serrano nas manhãs
+                frias se mistura ao ritmo dos passos na Boca Maldita, enquanto os sinos da Igreja da Ordem Terceira
+                ecoam no Largo da Ordem nos fins de tarde.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="rodape-content">
+                <div class="rodape-marca">
+                    <div class="rodape-logo">
+                        <img src="./img/logo-curitigo.jpg.png" alt="Logo do Curiti-Go">
+                        <span>Curiti-Go</span>
+                    </div>
+                    <p>Descubra o melhor de Curitiba.</p>
+                </div>
+
+                <nav>
+                    <ul class="rodape-links">
+                        <li><a href="./index.html">Início</a></li>
+                        <li><a href="./sons.html">Sons</a></li>
+                        <li><a href="./roteiro.html">Roteiro</a></li>
+                        <li><a href="./gastronomia.html">Gastronomia</a></li>
+                        <li><a href="./favoritos.html">Favoritos</a></li>
+                        <li><a href="./contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <hr>
+            <p class="copyright">&copy; 2026 Curiti-Go. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="./js/menu.js"></script>
+    <script src="./js/sons.js"></script>
+</body>
+
+</html>

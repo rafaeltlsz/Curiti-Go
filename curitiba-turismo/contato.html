@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="icon" type="image/png" href="./img/logo-guia.jpg.png">
+    <title>Contato - Curiti-Go</title>
+    <style>
+        main h1 {
+            color: #198754;
+        }
+
+        .form-control,
+        .form-select {
+            transition: border-color 0.2s;
+        }
+
+        .form-control:hover,
+        .form-select:hover {
+            border-color: #198754;
+        }
+
+        .form-control:focus,
+        .form-select:focus {
+            border-color: #198754;
+            box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+        }
+
+        .form-control:invalid:not(:placeholder-shown) {
+            border-color: #dc3545;
+            background-color: #fff5f5;
+        }
+    </style>
+</head>
+
+<body class="d-flex flex-column min-vh-100 bg-light">
+    <nav class="navbar navbar-expand-lg bg-success shadow-sm" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="./index.html">
+                <img src="./img/logo-curitigo.jpg.png" alt="Logo do Curiti-go" height="50" class="me-2 rounded p-1">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false"
+                aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./roteiro.html">Roteiro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./gastronomia.html">Gastronomia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./favoritos.html">Favoritos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./sons.html">Sons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold" aria-current="page" href="./contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <h1>Contato</h1>
+        <p class="text-muted">Fale com a equipe do Curiti-Go.</p>
+
+        <div id="alerta-contato"></div>
+
+        <form id="form-contato" class="row g-3">
+            <div class="col-12 col-md-6">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" name="nome" id="nome" class="form-control" required minlength="3"
+                    placeholder="Seu nome completo">
+            </div>
+            <div class="col-12 col-md-6">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" name="email" id="email" class="form-control" required
+                    placeholder="voce@exemplo.com">
+            </div>
+            <div class="col-12 col-md-6">
+                <label for="telefone" class="form-label">Telefone</label>
+                <input type="text" id="telefone" name="telefone" class="form-control" pattern="[0-9]{10,11}"
+                    title="Digite só números, com DDD (10 ou 11 dígitos)" placeholder="41999998888">
+            </div>
+            <div class="col-12 col-md-6">
+                <label for="assunto" class="form-label">Assunto</label>
+                <select id="assunto" name="assunto" class="form-select" required>
+                    <option value="">Selecione um assunto</option>
+                    <option value="Dúvida">Dúvida</option>
+                    <option value="Sugestão">Sugestão</option>
+                    <option value="Elogio">Elogio</option>
+                </select>
+            </div>
+            <div class="col-12">
+                <label for="mensagem" class="form-label">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" class="form-control" required minlength="10"
+                    placeholder="Escreva a sua mensagem"></textarea>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-success">Enviar</button>
+            </div>
+        </form>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container">
+            <div class="row align-items-center gy-3">
+                <div class="col-md-6 text-center text-md-start">
+                    <div class="d-flex align-items-center justify-content-center justify-content-md-start mb-2">
+                        <img src="./img/logo-curitigo.jpg.png" alt="Logo do Curiti-go" height="35"
+                            class="me-2 rounded p-1">
+                        <span class="fw-bold fs-5">Curiti-Go</span>
+                    </div>
+                    <p class="small text-white-50 mb-0">Descubra o melhor de Curitiba.</p>
+                </div>
+
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item mx-2"><a href="./index.html"
+                                class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none">Início</a>
+                        </li>
+                        <li class="list-inline-item mx-2"><a href="./roteiro.html"
+                                class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none">Roteiro</a>
+                        </li>
+                        <li class="list-inline-item mx-2"><a href="./gastronomia.html"
+                                class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none">Gastronomia</a>
+                        </li>
+                        <li class="list-inline-item mx-2"><a href="./favoritos.html"
+                                class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none">Favoritos</a>
+                        </li>
+                        <li class="list-inline-item mx-2"><a href="./sons.html"
+                                class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none">Sons</a>
+                        </li>
+                        <li class="list-inline-item mx-2"><a href="./contato.html"
+                                class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="border-secondary my-3">
+
+            <p class="text-center small text-white-50 mb-0">&copy; 2026 Curiti-go. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/contato.js"></script>
+</body>
+
+</html>
