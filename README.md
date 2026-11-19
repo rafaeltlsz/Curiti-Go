@@ -6,7 +6,7 @@
 
 Um guia turístico acadêmico para explorar parques, cultura, arquitetura e sabores da capital paranaense.
 
-<img src="img/banner-curitiba.jpg" alt="Paisagem de Curitiba" width="100%">
+<img src="opera-de-arame(1).jpg" alt="Paisagem de Curitiba" width="100%">
 
 [Começar a explorar](index.html) · [Pontos turísticos](pontos-turisticos.html) · [Roteiros](roteiro.html)
 
