@@ -16,7 +16,7 @@ formulario.addEventListener("submit", function (evento) {
     }
 
     alertaContato.className = "alert alert-success mb-3";
-    alertaContato.textContent = "Obrigado, " + nome + "! Recebemos sua mensagem sobre " + assunto + ".";
+    alertaContato.textContent = "Obrigado, " + nome + "! O formulário foi validado para o assunto \"" + assunto + "\", mas este protótipo ainda não envia mensagens.";
 
     formulario.reset();
 });
