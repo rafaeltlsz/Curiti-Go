@@ -1,0 +1,4 @@
+
+.navbar .navbar-nav {flex-wrap:wrap; justify-content:center;}
+.navbar .nav-link {font-size:.85rem; padding:.38rem .48rem; white-space:nowrap;}
+footer .list-inline {display:flex; flex-wrap:wrap; justify-content:center; gap:.15rem;}
