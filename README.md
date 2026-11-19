@@ -36,9 +36,9 @@ O **Curiti-go** é um guia digital feito por estudantes para apresentar Curitiba
 
 O projeto é um site estático e não precisa de instalação ou compilação.
 
-1. Baixe ou clone o repositório.
-2. Na pasta `Curiti-go`, abra `index.html` no navegador.
-3. Abra `Curiti-go/index.html` no navegador. Para desenvolvimento, você também pode usar a extensão Live Server do VS Code.
+1. Baixe ou clone este repositório.
+2. Abra a pasta `Curiti-go`.
+3. Abra `index.html` no navegador. Para desenvolvimento, você também pode usar a extensão Live Server do VS Code.
 
 O Bootstrap e os ícones já estão incluídos localmente na pasta do projeto.
 
@@ -46,12 +46,12 @@ O Bootstrap e os ícones já estão incluídos localmente na pasta do projeto.
 
 Os favoritos são guardados no `localStorage` do navegador e ficam disponíveis apenas naquele navegador e dispositivo. O formulário de contato é demonstrativo: valida os campos, mas não envia mensagens para um servidor.
 
-## Estrutura
+## Estrutura do repositório
 
 ```text
 Curiti-Go/
-    ├── README.md
-    └── Curiti-go/
+├── README.md
+└── Curiti-go/
     ├── index.html
     ├── pontos-turisticos.html
     ├── galeria.html
@@ -62,12 +62,12 @@ Curiti-Go/
     ├── sons.html
     ├── sobre.html
     ├── contato.html
-    │   ├── css/
-    │   ├── js/
-    │   ├── img/
-    │   ├── audio/
-    │   ├── video/
-    │   └── doc/
+    ├── css/
+    ├── js/
+    ├── img/
+    ├── audio/
+    ├── video/
+    └── doc/
 ```
 
 ## Equipe
